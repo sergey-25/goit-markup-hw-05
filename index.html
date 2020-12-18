@@ -22,10 +22,10 @@
                 <nav class="navigation">
                     <ul class="navigation-list">
                       <li class="navigation-list-item">
-                            <a class="navigation-link" href=""> <p class="par"> Студия</p></a>
+                            <a class="navigation-link " href=""> <p class="par"> Студия</p></a>
                         </li>
                         <li class="navigation-list-item">
-                         <a class="navigation-link" href="./portfolio.html"> <p class="par-portfolio"> Портфолио</p></a>
+                         <a class="navigation-link" href="./portfolio.html">  Портфолио</p></a>
                         </li>
                         <li class="navigation-list-item">
                           <a class="navigation-link" href=""> <p class="par-contacts">Контакты</p></a>
@@ -356,36 +356,62 @@
             
             </div>
         
+            <form class="form-footer" >
+                <p class="link-down-title">Подпишитесь на рассылку</p>
+                 <div class="footer-info-area">
+                <div class="form-footer-area">
+                <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                </div>
+               
+                <button class="button-submit-footer" type="submit">
+                 
+                    Подписаться 
+                   <svg class="button-submit-icon">
+                    <use href="./images/symbol-modal.svg#icon-icon-send"></use>
+                </svg>
+            </button>
+        </div>
+            </form>
         </div>
     
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form class="form-studio" action="" method="post">
-                    <h3>Оставьте свои данные, мы вам перезвоним</h3>
-                   <div class="info-input"> 
-                       <div class="full-name">
-                       <label class="name-lable">Имя
-                        <input class="name-input" type="text" name="name">
-                    </label></div>
-                    <label class="tel-input">Телефон
-                        <input type="tel" name="telephone"  >
-                    </label>
-                    <label>Почта
-                       <input type="email" name="email" />
-                    </label>
-                    
-                        Комментарий
-                        <textarea  name="message" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
-                    </div>
-                    
-                <div role="group"><input id="check" name="answer" type="checkbox" value="yes" />
-                        <label class="lable-check" for="check">Соглашаюсь с рассылкой и принимаю <a href=""> Условия
-                                договора</a></label>
-            
-                    </div>
-                    <button class="button-submit" type="submit">Отправить</button>
-                </form>
+            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="form">
+                            <div class="form-area">               
+                            <label class="form-label" for="name">Имя</label>
+                            <input class="form-input" type="text" name="user-name" id="name">
+                            </div>
+
+                            <div class="form-area">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel">
+                            </div>
+
+                            <div class="form-area">
+                            <label for="mail">Почта</label>
+                            <input type="email" name="mail" id="mail">
+                            </div>
+
+                            <div class="form-area">
+                            <label for="coment">Коментарий</label>
+                            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                            <input type="checkbox" name="choice" id="choice">
+                            <label for="choice">Соглашаюсь с рассылкой и принимаю
+                                <a href=""> Условия договора</a>
+                            </label>
+                            </div>
+
+                            <div class="form-button">
+                            <button class="button-submit" type="submit">Оставить заявку</button>
+                            </div>
+                        </form>
+    
             
             <button type="button" class="close-button" data-modal-close>
                 
